@@ -3,91 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="icon" type="image/x-icon" href="home/assets/logo.png">
     <meta name="keyword" content="html">
     <meta name="descripotion" content="about my portfolio">
     <meta name="author" content="il=jse" >
-    <meta http-equiv="refresh" content="2"/>
+    <meta http-equiv="refresh" content="100"/>
     <meta name="viewport" content="width=device-width",initial-scale="1"/>
 
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home/stylesheet.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <head>
+        <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        />
+    </head>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="education.html">EDUCATION</a>
-        <a href="experience.html">EXPERIENCE</a>
-        <a href="project.html">PROJECT</a>
-        <a href="assignment.html">ASSIGNMENT</a>
-        <a href="contact.html">CONTACT</a>
+<div>
+
+    <div id="preloader">
+        <div id="preloader-over-layer"></div>
+        <img src="assets/Infinity-1s-200px%20(2).gif" alt="preloader">
+    </div>
+
+    <img src="home/assets/logo.png" alt="logo">
+    <nav class="nav">
+        <dl>
+            <dd><a href="../home/index.html">HOME</a>
+            <dd> <a href="education/education.html">EDUCATION</a></dd>
+            <dd> <a href="experience/experience.html">EXPERIENCE</a></dd>
+            <dd> <a href="project/project.html">PROJECT</a></dd>
+            <dd> <a href="assignment/assignment.html">ASSIGNMENT</a></dd>
+            <dd> <a href="contact/contact.html">CONTACT</a></dd>
+        </dl>
     </nav>
+</div>
 
-    <div>
-        <img src="assets/m2.png" alt="myHalfImg">
-        <img src="assets/white.jpeg" alt="codeImg"> <br><br>
-        <h1f>Hi. I'M KUSHAN</h1f>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nisi voluptatibus. Aut cumque dolorum ipsam modi molestiae neque odio quam similique totam? Accusamus aut facere natus officia quae quidem recusandae?</p>
+<header>
+    <div id="div2" >
+        <img src="home/assets/my.png" alt="myHalfImg" data-aos="fade-right" data-aos-easing="ease-in-sine">
+        <img src="home/assets/myHalfImage.png" alt="b&w" data-aos="fade-left" data-aos-easing="ease-in-sine">
 
-        <a href="https://github.com/kushanMadusha96"><img src="assets/icons8-github-90%20(2).png" alt="githubImg"></a>
-        <a href="https://web.facebook.com/"><img src="assets/icons8-facebook-96.png" alt="fbImg"></a>
-        <a href="https://twitter.com/kushanmadusha96"><img src="assets/icons8-twitter-circled-96.png" alt="twitterImg"></a>
-        <a href="https://www.linkedin.com/in/kushan-madusha-320012273/"><img src="assets/icons8-linkedin-circled-96.png" alt="linkedinImg"></a>
+        <span class="animate__animated animate__heartBeat" id="span1">Hi. I'M <span> KUSHAN.</span> </span>
+        <section class="span" id="span2">
+            <span class="description">hi,</span>
+            <span class="description"> my</span>
+            <span class="description"> name</span>
+            <span class="description"> kushan</span>
+            <span class="description"> madusha</span>
+            <span class="description"> and</span>
+            <span class="description"> I'm</span>
+            <span class="description"> a</span>
+            <span class="description"> software</span>
+            <span class="description"> engineer,</span>
+        </section>
 
-        <br><br>
+        <section class="span" id="span3">
+            <span class="description">welcome</span>
+            <span class="description"> to</span>
+            <span class="description"> my</span>
+            <span class="description"> personal</span>
+            <span class="description"> website.</span>
+        </section>
 
-        <a href="" download><button>DOWNLOAD CV</button></a>
-        <a href="" download><button>CONTACT ME</button></a>
+        <button class="btnDownload" id="btnDownload1"><a href="" download=""></a><span class="btnSpan">DOWNLOAD CV</span></button>
+        <button class="btnDownload" id="btnDownload2"><a href="" download=""></a><span class="btnSpan">CONTACT ME</span></button>
 
+        <div data-aos="fade-down">
+            <a href="https://github.com/kushanMadusha96"><img src="home/assets/github.png" alt="githubImg"></a>
+            <a href="https://web.facebook.com/"><img src="home/assets/fb.png" alt="fbImg"></a>
+            <a href="https://twitter.com/kushanmadusha96"><img src="home/assets/twitter.png" alt="twitterImg"></a>
+            <a href="https://www.linkedin.com/in/kushan-madusha-320012273/"><img src="home/assets/linkedIn.png" alt="linkedinImg"></a>
+        </div>
     </div>
 </header>
+
     <main>
-        <section>
-            <img src="assets/my4.jpg" alt="aboutMe" width="300">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at consequatur esse ipsam labore molestias nesciunt quasi saepe unde ut. Ea excepturi in ipsum laboriosam laudantium obcaecati odit quia quod.</p>
+        <section class="section" id="sec1">
+            <div><img src="home/assets/aboutMe.jpg" alt="abouMeImg" height="500vh" data-aos="zoom-in"></div>
+            <div>
+                <span>About Me</span>
+                <p>
+                    I’m a software engineer specialised in frontend and backend development for complex scalable web & mobile apps.I’m a f . I’m a software engineer specialised in frontend and backend development for complex scalable web & mobile apps.I’m a f . I’m a software engineer specialised in frontend and backend development for complex scalable web & mobile apps.I’m a f . I’m a software engineer specialised in frontend and backend development for complex scalable web & mobile apps.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <img src="assets/g3.jpg" alt="skillset" width="300">
-            <h2>My Skill Set</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at consequatur esse ipsam labore molestias nesciunt quasi saepe unde ut. Ea excepturi in ipsum laboriosam laudantium obcaecati odit quia quod.</p>
+        <section class="section" id="sec2">
+            <div data-aos="zoom-in"></div>
+            <div>
+                <span>My Skill Set</span>
+                <p>
+                    I’m a software engineer specialised in frontend and backend development for complex scalable web & mobile apps.I’m a f . I’m a software engineer specialised in frontend and backend development for complex scalable web & mobile apps.I’m a f . I’m a software engineer specialised in frontend and backend development for complex scalable web & mobile apps.I’m a f . I’m a software engineer specialised in frontend and backend development for complex scalable web & mobile apps.
+                </p>
+            </div>
         </section>
-        <section>
-        <h2>Project Overview</h2>
-            <img src="assets/o1.png" alt="project1" width="300">
-            <img src="assets/o2.png" alt="project2" width="300">
-            <img src="assets/o3.jpg" alt="project3" width="300">
 
-            <br><br>
-
-            <botton>view projects</botton>
-
-         <section>
-             <h2>Gallery</h2>
-             <img src="assets/g1.jpg" alt="myimg1" width="300"> <br>
-             <img src="assets/g2.jpg" alt="myimg2" width="300"> <br>
-             <img src="assets/g4.jpg" alt="myimg3" width="300"> <br>
-             <img src="assets/g5.jpg" alt="myimg4" width="300"> <br>
-             <img src="assets/g6.jpg" alt="myimg5" width="300"> <br>
-             <img src="assets/p2.jpg" alt="myimg6" width="300"> <br>
-             <img src="assets/g7.jpg" alt="myimg7" width="300">
+        <section class="section" id="sec3">
+                <div class="container">
+                    <div class="items">
+                        <div class="item a"></div>
+                        <div class="item b"></div>
+                        <div class="item c"></div>
+                        <div class="item d"></div>
+                        <div class="item e"></div>
+                        <div class="item f"></div>
+                    </div>
+                </div>
+            <button><span>view projects</span></button>
          </section>
-    </section>
-    </main>
-<footer>
-    <div>
-        <h1>I'm here</h1>
-        <h6>I will always be dedicated to your service</h6>
-    </div>
-    <div>
-        <h5>share your requirements with me,</h5>
-        <h5>kushanMadusha62@gmail.com</h5>
-        <h5>0772461021</h5>
 
-        <a href="https://github.com/kushanMadusha96"><img src="assets/icons8-github-90%20(2).png" alt="githubImg"></a>
-        <a href="https://web.facebook.com/"><img src="assets/icons8-facebook-96.png" alt="fbImg"></a>
-        <a href="https://twitter.com/kushanmadusha96"><img src="assets/icons8-twitter-circled-96.png" alt="twitterImg"></a>
-        <a href="https://www.linkedin.com/in/kushan-madusha-320012273/"><img src="assets/icons8-linkedin-circled-96.png" alt="linkedinImg"></a>
+        <section id="sec4">
+            <section>
+                <span>G</span>
+                <span>A</span>
+                <span>L</span>
+                <span>L</span>
+                <span>E</span>
+                <span>R</span>
+                <span>Y</span>
+            </section>
+
+            <section class="gallerySlide">
+                <div>
+                    <div id="g1"></div>
+                    <div id="g2"></div>
+                    <div id="g3"></div>
+                    <div id="g4"></div>
+                    <div id="g5"></div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+<!--responsive mobile-->
+<section id="menuBar">
+    <img src="home/assets/logo.png" alt="logo">
+    <button id="menuBtn"></button>
+    <div id="pages">
+        <div> <a href="../home/index.html">HOME</a></div>
+        <div> <a href="education/education.html">EDUCATION</a></div>
+        <div> <a href="experience/experience.html">EXPERIENCE</a></div>
+        <div> <a href="assignment/assignment.html">ASSIGNMENT</a></div>
+        <div> <a href="project/project.html">PROJECT</a></div>
+        <div> <a href="contact/contact.html">CONTACT</a></div>
     </div>
+</section>
+<div id="mobileDiv1">
+    <section id="amI">
+        <span id="amISpan">Hi. I'M KUSHAN,</span>
+    </section>
+
+    <section id="aboutMe">
+        <section id="imgAndP">
+            <img src="home/assets/aboutMe.jpg" alt="aboutMe">
+            <span>About Me</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta ea eos expedita harum illo incidunt quidem sint? A adipisci assumenda autem error maiores, neque nisi quae similique sint voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta ea eos expedita harum illo incidunt quidem sint? A adipisci assumenda autem error maiores, neque nisi quae similique sint voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta ea eos expedita harum illo incidunt quidem sint? A adipisci assumenda autem error maiores, neque nisi quae similique sint voluptate.
+            </p>
+        </section>
+        <section id="sectionBtn">
+            <button>DOWNLOAD CV</button>
+            <button>CONTACT ME</button>
+        </section>
+
+        <section id="socialIconBtns">
+            <a href="https://github.com/kushanMadusha96"><img src="home/assets/github.png" alt="githubImg"></a>
+            <a href="https://web.facebook.com/"><img src="home/assets/fb.png" alt="fbImg"></a>
+            <a href="https://twitter.com/kushanmadusha96"><img src="home/assets/twitter.png" alt="twitterImg"></a>
+            <a href="https://www.linkedin.com/in/kushan-madusha-320012273/"><img src="home/assets/linkedIn.png" alt="linkedinImg"></a>
+        </section>
+    </section>
+    <section id="mobileMySkill">
+        <img src="home/assets/skillImg.jpg" alt="skillImg">
+        <span>My Skill</span>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor eius eum iste libero optio saepe. Aliquid, consectetur esse illo, ipsa iusto magni minima officiis, quam quidem ratione sint soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor eius eum iste libero optio saepe. Aliquid, consectetur esse illo, ipsa iusto magni minima officiis, quam quidem ratione sint soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor eius eum iste libero optio saepe. Aliquid, consectetur esse illo, ipsa iusto magni minima officiis, quam quidem ratione sint soluta.
+        </p>
+    </section>
+    <section id="ProjectSlideMobile">
+        <span>Project Overview</span>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <button>view projects</button>
+    </section>
+
+    <section id="galleryMobile">
+        <span>Gallery</span>
+        <div></div>
+    </section>
+
+    <section id="footerMobile">
+        <span>I'm here</span>
+        <div id="information">
+            <a  href="contact/contact.html">share your requirements with me,</a>
+            <a  href="contact/contact.html">kushanMadusha62@gmail.com</a>
+            <a  href="contact/contact.html">0772461021</a>
+        </div>
+        <div id="socialIcons">
+            <a href="https://github.com/kushanMadusha96"><img src="home/assets/github.png" alt="githubImg" ></a>
+            <a href="https://web.facebook.com/"><img src="home/assets/fb.png" alt="fbImg" ></a>
+            <a href="https://twitter.com/kushanmadusha96"><img src="home/assets/twitter.png" alt="twitterImg" ></a>
+            <a href="https://www.linkedin.com/in/kushan-madusha-320012273/"><img src="home/assets/linkedIn.png" alt="linkedinImg" ></a>
+        </div>
+    </section>
+    </section>
+</div>
+<!--responsive mobile end-->
+
+<footer data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <div>
+        <span>I'm here</span>
+        <span>I will always be dedicated to your service</span>
+    </div>
+    <div>
+        <a id="a1" href="contact/contact.html">share your requirements with me,</a>
+        <a id="a2" href="contact/contact.html">kushanMadusha62@gmail.com</a>
+        <a id="a3" href="contact/contact.html">0772461021</a>
+
+        <div>
+            <a href="https://github.com/kushanMadusha96"><img src="home/assets/github.png" alt="githubImg" ></a>
+            <a href="https://web.facebook.com/"><img src="home/assets/fb.png" alt="fbImg" ></a>
+            <a href="https://twitter.com/kushanmadusha96"><img src="home/assets/twitter.png" alt="twitterImg" ></a>
+            <a href="https://www.linkedin.com/in/kushan-madusha-320012273/"><img src="home/assets/linkedIn.png" alt="linkedinImg" ></a>
+        </div>
+     </div>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="home/home.js"></script>
+<script src="lib/jquary.min.js"></script>
 </body>
 </html>

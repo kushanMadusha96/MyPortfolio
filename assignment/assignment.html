@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>assignment page</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <meta name="keyword" content="html">
+    <meta name="descripotion" content="about my portfolio">
+    <meta name="author" content="il=jse" >
+    <meta http-equiv="refresh" content="100"/>
+    <meta name="viewport" content="width=device-width",initial-scale="1"/>
+
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <img src="assets/logo.png" alt="logo">
+    <nav>
+        <dl>
+            <dd><a href="../index.html">HOME</a>
+            <dd> <a href="../education/education.html">EDUCATION</a></dd>
+            <dd> <a href="../experience/experience.html">EXPERIENCE</a></dd>
+            <dd> <a href="../project/project.html">PROJECT</a></dd>
+            <dd> <a href="assignment.html">ASSIGNMENT</a></dd>
+            <dd> <a href="../contact/contact.html">CONTACT</a></dd>
+        </dl>
+    </nav>
+</header>
+    <main>
+        <section id="sec1">
+            <section id="sec2">
+                <select id="selectorLap">
+                    <option value="choose">choose assignment</option>
+                    <optgroup label="Assignment 03">
+                        <option value="c31">case 01</option>
+                        <option value="c32">case 02</option>
+                        <option value="c33">case 03</option>
+                        <option value="c34">case 04</option>
+                        <option value="c35">case 05</option>
+                        <option value="c36">case 06</option>
+                    </optgroup>
+                    <optgroup label="Assignment 04">
+                        <option value="c41">case 01</option>
+                        <option value="c42">case 02</option>
+                        <option value="c43">case 03</option>
+                        <option value="c44">case 04</option>
+                        <option value="c45">case 05</option>
+                        <option value="c46">case 06</option>
+                    </optgroup>
+                    <option value="a8">Assignment 08</option>
+                    <option value="a9">Assignment 09</option>
+                    <option value="a5">portfolio</option>
+                    <option value="a11">pos system</option>
+                </select>
+            </section>
+            <div id="pdf-container"></div>
+            <a href="" id="git"><button>git hub</button></a>
+            <a href="" id="veb"><button>run</button></a>
+        </section>
+    </main>
+
+<!--responsive mobile-->
+<section id="menuBar">
+    <img src="assets/logo.png" alt="logo">
+    <button id="menuBtn"></button>
+    <div id="pages">
+        <div> <a href="../index.html">HOME</a></div>
+        <div> <a href="../education/education.html">EDUCATION</a></div>
+        <div> <a href="../experience/experience.html">EXPERIENCE</a></div>
+        <div> <a href="../assignment/assignment.html">ASSIGNMENT</a></div>
+        <div> <a href="../project/project.html">PROJECT</a></div>
+        <div> <a href="../contact/contact.html">CONTACT</a></div>
+    </div>
+</section>
+    <section id="mobile">
+
+        <select id="selector">
+            <option value="choose">choose assignment</option>
+            <optgroup label="Assignment 03">
+                <option value="c31">case 01</option>
+                <option value="c32">case 02</option>
+                <option value="c33">case 03</option>
+                <option value="c34">case 04</option>
+                <option value="c35">case 05</option>
+                <option value="c36">case 06</option>
+            </optgroup>
+            <optgroup label="Assignment 04">
+                <option value="c41">case 01</option>
+                <option value="c42">case 02</option>
+                <option value="c43">case 03</option>
+                <option value="c44">case 04</option>
+                <option value="c45">case 05</option>
+                <option value="c46">case 06</option>
+            </optgroup>
+            <option value="a8">Assignment 08</option>
+            <option value="a9">Assignment 09</option>
+            <option value="a5">portfolio</option>
+            <option value="a11">pos system</option>
+        </select>
+
+        <section id="assignment">
+            <div id="pdf-container-mobile"></div>
+            <a href="" id="git-m"><button>git hub</button></a>
+            <a href="" id="veb-m"><button>run</button></a>
+        </section>
+
+    </section>
+<!--responsive mobile end-->
+
+<script src="../lib/jquary.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="assignment.js"></script>
+</body>
+</html>

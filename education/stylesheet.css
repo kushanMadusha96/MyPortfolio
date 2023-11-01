@@ -1,0 +1,582 @@
+/*  navbar and image(header)    */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: #394867;
+    z-index: 999;
+}
+body {
+    background-color: #212A3E;
+    overflow-x: hidden;
+}
+header>img{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 55px;
+    border: 2px solid #0ea293;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2vw;
+    margin: auto;
+}
+header>nav>dl>dd {
+    display: inline;
+    margin-left: 2vw;
+}
+header>nav>dl>dd>a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header>nav>dl {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 3vw;
+    margin: auto;
+    font-size: 15px;
+}
+
+/*  main -> section 2   */
+
+section {
+    height: calc((100vh - 80px));
+    position: relative;
+}
+
+#sec2>div:first-child {
+    position: absolute;
+    height:calc((100vh / 1.2) - 80px);
+    width: calc(100vw / 2.2);
+    filter: brightness(95%);
+    right: 3vw;
+    top: 100px;
+    bottom: 0;
+    margin: auto;
+    background-image: url("assets/skillImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:1%;
+}
+
+#sec2>div:last-child>span {
+    font-size: 62px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-family: 'Abhaya Libre', serif;
+}
+#sec2>div:last-child {
+    position: absolute;
+    width: calc(100vw / 2.5);
+    height:calc((100vh / 1.2) - 80px);
+    top: -10px;
+    bottom: 0;
+    left: 3vw;
+    margin: auto;
+}
+#sec2>div:last-child>p {
+    font-size: 2vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12vh;
+    margin: auto;
+    color: #B9B4C7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*  main -> section 3   */
+#sec3 {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: calc((100vh - 80px) / 2);
+    justify-content: space-around;
+    top: -3vh;
+}
+#sec3>div:first-child{
+    animation: sec3 15s infinite;
+}
+#sec3>div:nth-child(2){
+    animation: sec3 15s infinite;
+}
+#sec3>div:last-child{
+    animation: sec3 15s infinite;
+}
+@keyframes sec3 {
+    to{
+        transform: rotateY(360deg);
+    }
+}
+#sec3>div:first-child {
+    width: calc(100vw / 4);
+    height: calc((100vh - 80px) / 2);
+    background-image: url("assets/rcc.png");
+    background-size: 15vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #212A3E;
+}
+#sec3>div:nth-child(2) {
+    width: calc(100vw / 4);
+    height: calc((100vh - 80px) / 2);
+    background-image: url("assets/ijse.png");
+    background-size: 16vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #212A3E;
+}
+#sec3>div:last-child {
+    width: calc(100vw / 4);
+    height: calc((100vh - 80px) / 2);
+    background-image: url("assets/acpt.png");
+    background-size: 15vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #212A3E;
+}
+
+/*  footer  */
+footer{
+    position: relative;
+    width: 100vw;
+    height: 10vw;
+}
+footer>a:first-child>button {
+    position: absolute;
+    width: 96vw;
+    height: 4vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #212A3E;
+    border: 2px solid #0ea293;
+    border-radius: 10px;
+    color: #DBDFEA;
+    font-family: 'Montserrat', sans-serif;
+}
+footer>a:last-child>button {
+    position: absolute;
+    width: 96vw;
+    height: 4vw;
+    left: 0;
+    right: 0;
+    bottom: 3vh;
+    margin: auto;
+    background-color: #212A3E;
+    border: 2px solid #0ea293;
+    border-radius: 10px;
+    color: #DBDFEA;
+    font-family: 'Montserrat', sans-serif;
+}
+footer>a:first-child>button:hover {
+    background-color: #0ea293;
+    font-weight: bold;
+}
+footer>a:last-child>button:hover {
+    background-color: #0ea293;
+    font-weight: bold;
+}
+
+
+@media all and (min-width: 280px) and (max-width: 610px) {
+    header, main, footer {
+        display: none
+    }
+
+    /*  menubar & logo  */
+    #menuBar {
+        width: 100vw;
+        height: 370px;
+        background-color: #394867;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        /*border-bottom: 1px solid gray;*/
+    }
+    #mobile {
+        position: absolute;
+        width: 90%;
+        right: 0;
+        left: 0;
+        top: 70px;
+        margin: auto;
+    }
+
+    #menuBar>img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        margin: auto;
+    }
+    #menuBar>button {
+        width: 50px;
+        height: 50px;
+        background-image: url("assets/menuBtn.png");
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        margin: auto;
+        background-color: #394867;
+        border: none;
+    }
+
+    #pages {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        display: grid;
+        top: 70px;
+    }
+
+    #pages>div{
+        display: flex;
+        justify-content: center;
+    }
+    #pages>div>a {
+        color: #B9B4C7;
+        text-decoration: none;
+    }
+    #pages>div:hover {
+        filter: brightness(120%);
+    }
+
+    #myEducationMobile {
+        /*border: 1px solid #394867;*/
+        height: auto;
+        margin-top: 15px;
+        border-bottom: 1px solid #394867;
+        padding-bottom: 3vh;
+    }
+    #myEducationMobile > img {
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+    #myEducationMobile > span {
+        width: fit-content;
+        height: fit-content;
+        font-weight: bold;
+        font-size: 7vw;
+        color: #0ea293;
+        margin: 20px 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 2px 0px #DBDFEA;
+        bottom: 1vh;
+    }
+    #myEducationMobile > p {
+        width: 86vw;
+        margin: 10px 0;
+        color: #B9B4C7;
+        font-size: 4vw;
+        display: flex;
+        text-align: center;
+        /*font-family: 'Montserrat', sans-serif;*/
+    }
+    #schools {
+        margin-top: 4vh;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 4vh;
+        border-bottom: 1px solid #394867;
+    }
+    #schools>img {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 100%;
+        margin: 10px auto;
+        animation: roundLogos 20s infinite;
+    }
+    #schools>img:nth-child(2) {
+        animation-delay: 1s;
+    }
+    #schools>img:last-child {
+        animation-delay: 2s;
+    }
+    @keyframes roundLogos {
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+    #btnMobile {
+        width: 100%;
+        height: auto;
+        margin-top:2vh;
+        padding-bottom: 2vh;
+    }
+    #btnMobile>button {
+        width: 90%;
+        height: fit-content;
+        margin: 2px 5% ;
+        background-color: #394867;
+        color: #0ea293;
+        border: 1px solid #B9B4C7;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+    #btnMobile>button:hover {
+        background-color: #0ea293;
+        color: #DBDFEA;
+        border: 1px solid #0ea293;
+    }
+
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+     #menuBar, main, footer {
+        display: none
+    }
+
+    #myEducationMobile {
+        height: auto;
+        margin-top: 15px;
+        border-bottom: 1px solid #394867;
+        padding-bottom: 3vh;
+    }
+    #myEducationMobile > img {
+        width: 80%;
+        /*height: 60%;*/
+        margin: 0 0 5px 10%;
+
+    }
+    #myEducationMobile > span {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        font-weight: bold;
+        font-size: 3vw;
+        color: #0ea293;
+        margin: 20px 0 20px 7vw;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 2px 0px #DBDFEA;
+        bottom: 1vh;
+    }
+    #myEducationMobile > p {
+        width: 86vw;
+        margin: 10px 0 10px 7vw;
+        color: #B9B4C7;
+        font-size: 2vw;
+        display: flex;
+        text-align: center;
+    }
+    #schools {
+        margin-top: 20px;
+        height: auto;
+        display:flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #394867;
+    }
+    #schools>img {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 100%;
+        margin: 10px auto;
+        animation: roundLogos 20s infinite;
+    }
+    #schools>img:nth-child(2) {
+        width: 20vw;
+        height: 20vw;
+        animation-delay: 1s;
+    }
+    #schools>img:last-child {
+        animation-delay: 2s;
+    }
+    @keyframes roundLogos {
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+    #btnMobile {
+        width: 100%;
+        height: auto;
+        margin-top:30px;
+        padding-bottom: 2vh;
+    }
+    #btnMobile>button {
+        width: 90%;
+        height: fit-content;
+        margin: 2px 5% ;
+        background-color: #394867;
+        color: #0ea293;
+        border: 1px solid #B9B4C7;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+    #btnMobile>button:hover {
+        background-color: #0ea293;
+        color: #DBDFEA;
+        border: 1px solid #0ea293;
+    }
+
+}
+
+@media all and (min-width: 610px) and (max-width: 769px) {
+    header, main, footer {
+        display: none
+    }
+
+    /*  menubar & logo  */
+    #menuBar {
+        width: 100vw;
+        height: 370px;
+        background-color: #394867;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+    }
+    #mobile {
+        position: absolute;
+        width: 90%;
+        right: 0;
+        left: 0;
+        top: 70px;
+        margin: auto;
+    }
+
+    #menuBar>img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        margin: auto;
+    }
+    #menuBar>button {
+        width: 50px;
+        height: 50px;
+        background-image: url("assets/menuBtn.png");
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        margin: auto;
+        background-color: #394867;
+        border: none;
+    }
+
+    #pages {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        display: grid;
+        top: 70px;
+    }
+
+    #pages>div{
+        display: flex;
+        justify-content: center;
+    }
+    #pages>div>a {
+        color: #B9B4C7;
+        text-decoration: none;
+    }
+    #pages>div:hover {
+        filter: brightness(120%);
+    }
+
+    #myEducationMobile {
+        height: auto;
+        margin-top: 15px;
+        border-bottom: 1px solid #394867;
+        padding-bottom: 3vh;
+    }
+    #myEducationMobile > img {
+        width: 80%;
+        /*height: 60%;*/
+        margin: 0 0 5px 10%;
+
+    }
+    #myEducationMobile > span {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        font-weight: bold;
+        font-size: 3vw;
+        color: #0ea293;
+        margin: 20px 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 2px 0px #DBDFEA;
+        bottom: 1vh;
+    }
+    #myEducationMobile > p {
+        width: 86vw;
+        right: 0;
+        left: 0;
+        margin: 10px 10px;
+        color: #B9B4C7;
+        font-size: 2vw;
+        display: flex;
+        text-align: center;
+    }
+    #schools {
+        margin-top: 20px;
+        height: auto;
+        display:flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #394867;
+    }
+    #schools>img {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 100%;
+        margin: 10px auto;
+        animation: roundLogos 20s infinite;
+    }
+    #schools>img:nth-child(2) {
+        width: 20vw;
+        height: 20vw;
+        animation-delay: 1s;
+    }
+    #schools>img:last-child {
+        animation-delay: 2s;
+    }
+    @keyframes roundLogos {
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+    #btnMobile {
+        width: 100%;
+        height: auto;
+        margin-top:30px;
+        padding-bottom: 2vh;
+    }
+    #btnMobile>button {
+        width: 90%;
+        height: fit-content;
+        margin: 2px 5% ;
+        background-color: #394867;
+        color: #0ea293;
+        border: 1px solid #B9B4C7;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+    #btnMobile>button:hover {
+        background-color: #0ea293;
+        color: #DBDFEA;
+        border: 1px solid #0ea293;
+    }
+
+}
+
+
+@media all and (min-width: 1024px){
+    #menuBar, #mobile {
+        display: none;
+    }
+}
